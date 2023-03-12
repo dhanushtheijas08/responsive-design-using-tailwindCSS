@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="w-full min-h-screen bg-rose-200 flex justify-center items-center py-6">
+    <div class="flex flex-col space-y-6 py-4 md:space-y-10 py-20 md:py-10 px-10 bg-white shadow-2xl rounded-2xl">
+      <!-- Navigation Bar -->
+      <div class="w-full flex justify-center md:justify-end">
+        <div
+          class="flex flex-col gap-4 items-center md:flex-row md:justify-end md:gap-10 text-2xl font-semibold md:gap-10">
+          <div class="flex flex-col gap-0.5 group items-center">
+            <a href="#" class="text-xl font-semibold">Vector</a>
+            <div class="h-0.5 w-5/6 opacity-0 group-hover:opacity-100 bg-black duration-500"></div>
+          </div>
+          <div class="flex flex-col gap-0.5 group items-center">
+            <a href="#" class="text-xl font-semibold">Illustration</a>
+            <div class="h-0.5 w-5/6 opacity-0 group-hover:opacity-100 bg-black duration-500"></div>
+          </div>
+          <div class="flex flex-col gap-0.5 group items-center">
+            <a href="#" class="text-xl font-semibold">Images</a>
+            <div class="h-0.5 w-5/6 opacity-0 group-hover:opacity-100 bg-black duration-500"></div>
+          </div>
+          <div class="flex flex-col gap-0.5 group items-center">
+            <a href="#" class="text-xl font-semibold">Icons</a>
+            <div class="h-0.5 w-5/6 opacity-0 group-hover:opacity-100 bg-black duration-500"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search and upload btn -->
+      <div class="flex flex-col md:flex-row gap-4 md:gap-0 justtify-center md:justify-between w-full">
+        <div class="relative w-full md:w-64 flex">
+          <input type="text" class="focus:outline-none pl-2 border-b-2 text-2xl font-semibold w-full" placeholder="Search">
+        </div>
+        <button
+          class="bg-black text-white rounded-md shadow-lg text-center py-4 px-10 md:px-28 text-xl font-semibold">Upload</button>
+      </div>
+
+      <!-- Images -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-1.jpg" alt="" class="h-64 rounded-2xl group">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 1</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-2.jpg" alt="" class="h-64 rounded-2xl group w-96">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 2</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-3.jpg" alt="" class="h-64 rounded-2xl group w-96">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 3</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-4.jpg" alt="" class="h-64 rounded-2xl group">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 4</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-5.jpg" alt="" class="h-64 rounded-2xl group">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 5</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <img src="./imgs/img-6.jpg" alt="" class="h-64 rounded-2xl group">
+          <div
+            class="absolute left-0 bottom-0 flex justify-between w-full items-center items-center p-4 text-white opacity-0 bg-black rounded-b-xl bg-opacity-60  group-hover:opacity-100 duration-500">
+            <p class="text-2xl">Image 6</p>
+            <img src="./imgs/bookmark-img.png" alt="" class="h-9">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
