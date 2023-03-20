@@ -1,0 +1,16 @@
+
+
+.section-1 {
+  background-image: url('./imgs/bg-header-desktop.png');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+  .section-1 {
+    background-image: url('./imgs/bg-header-mobile.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

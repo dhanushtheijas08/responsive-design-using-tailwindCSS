@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px',
+        },
+        extend: {
+          colors: {
+            strongCyan: 'hsl(171, 66%, 44%)',
+            lightBlue: 'hsl(233, 100%, 69%)',
+            darkGrayishBlue: 'hsl(210, 10%, 33%)',
+            grayishBlue: 'hsl(201, 11%, 66%)',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <title>Downloading Page</title>
+</head>
+
+<body>
+  <section class="section-1 ">
+    <div class="max-w-6xl mx-auto text-center mb-48 px-10 pt-28">
+      <img src="./imgs/logo.svg" alt="" class="mx-auto">
+      <h1 class="mx-auto text-sans text-3xl md:text-5xl mt-8 opacity-70">A history of everything you copy</h1>
+      <p class="mx-auto mt-4 text-center opacity-50 text-xl inlne md:block">Clipboard allows you to track and organize
+        everything you copy.</p>
+      <p class="mx-auto text-center opacity-50 text-xl inlne md:block">Instantly access your clipboard on all your
+        devices.</p>
+      <div class="flex flex-col md:flex-row w-full justify-center space-y-6 md:space-y-0 md:space-x-12 mt-12">
+        <button class="text-lg text-white text-center px-20 py-4 rounded-full bg-strongCyan shadow-lg">Downloade For
+          IOS</button>
+        <button class="text-lg text-white text-center px-20 py-4 rounded-full bg-lightBlue shadow-lg">Downloade For
+          Android</button>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-1">
+      <h2 class="text-3xl md:text-5xl opacity-70 text-center">Kepp track of yout snippets</h2>
+      <p class="max-w-3xl leading-relaxed mx-auto text-justify md:text-center text-xl px-10 md:px-0 opacity-50 mt-4">
+        Clipboard instantly stores any item you copy in the cloud, meaning you can a
+        your snippets immediately on all your devices. Our Mac and iOS apps will help you
+        organize everything.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex flex-col md:flex-row w-full md:px-20 px-10 mt-24 items-center justify-evenly mb-40">
+      <img src="./imgs/image-computer.png" alt="computer image" class="h-fit md:w-auto md:h-96 mb-10 md:mb-0">
+      <div class="flex flex-col gap-12">
+        <div class="flex flex-col max-w-sm">
+          <h3 class="text-2xl opacity-70 text-center md:text-left mb-4">Quick Search</h3>
+          <p class="text-xl opacity-50 text-center md:text-left  leading-7">Easily search your snippets by content,
+            category, web address, application, and
+            more.</p>
+        </div>
+        <div class="flex flex-col max-w-sm">
+          <h3 class="text-2xl opacity-70 text-center md:text-left mb-4">iCloud Sync</h3>
+          <p class="text-xl opacity-50 text-center md:text-left  leading-7">Instantly saves and syncs snippets across
+            all your devices.</p>
+        </div>
+        <div class="flex flex-col max-w-sm ">
+          <h3 class="text-2xl opacity-70 text-center md:text-left mb-4">Completely History</h3>
+          <p class="text-xl opacity-50 text-center md:text-left  leading-7 ">Retrieve any snippets from the first moment
+            you started using the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center">
+    <div class="text-3xl md:text-5xl text-center opacity-70 mb-10">Access Clipboard anywhere</div>
+    <p class="max-w-2xl mx-auto opacity-50 text-xl text-center px-10 ">Whether you're on the go, or at your computer,
+      you can access all your Clipboard
+      snippets in a few simple clicks.</p>
+    <img src="./imgs/image-devices.png" alt="" class="w-fit my-20">
+  </section>
+
+  <section class="flex flex-col gap-6">
+    <h2 class="text-3xl md:text-5xl opacity-70 text-center">Supercharge your workflow</h2>
+    <p class="text-xl opacity-50 text-center mb-10">We've got the tools to boost your productivity.</p>
+    <div class="flex flex-col md:flex-row justify-center md:justify-evenly items-center md:items-start gap-4 md:gap-0">
+      <div class="flex flex-col gap-2 justify-center items-center max-w-sm">
+        <img src="./imgs/icon-blacklist.svg" alt="" class="h-min w-min">
+        <h5 class="text-2xl opacity-70">Create blacklist</h5>
+        <p class="text-xl opacity-50 text-center">Easily search your snippets by content,
+          category, web address, application, and
+          more.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 justify-center items-center max-w-sm">
+        <img src="./imgs/icon-text.svg" alt="" class="h-min w-min">
+        <h5 class="text-2xl opacity-70">Plain text snippets</h5>
+        <p class="text-xl opacity-50 text-center">Remove unwanted formatting from copied
+          text for a consistent look.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 justify-center items-center max-w-sm">
+        <img src="./imgs/icon-preview.svg" alt="" class="h-min w-min">
+        <h5 class="text-2xl opacity-70">Sneak preview</h5>
+        <p class="text-xl opacity-50 text-center">Quick preview of all snippets on your
+          Clipboard for easy access.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-center md:justify-evenly items-center my-32 gap-20 md:gap-0">
+      <img src="./imgs/logo-google.png" alt="" class="h-fit">
+      <img src="./imgs/logo-hp.png" alt="" class="h-fit">
+      <img src="./imgs/logo-ibm.png" alt="" class="h-fit">
+      <img src="./imgs/logo-microsoft.png" alt="" class="h-fit">
+      <img src="./imgs/logo-vector-graphics.png" alt="" class="h-fit">
+    </div>
+  </section>
+
+  <section class="px-10 mb-20 ">
+    <h2 class="mx-auto text-center text-3xl md:text-5xl opacity-70 mb-10">Clipboard for IOS and Mac OS</h2>
+    <p class="text-2xl max-w-3xl opacity-50 mx-auto text-justify md:text-center">Available for free on the App Store.
+      Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
+    <div class="flex flex-col md:flex-row w-full justify-center space-y-6 md:space-y-0 md:space-x-12 mt-12">
+      <button class="text-lg text-white text-center px-20 py-4 rounded-full bg-strongCyan shadow-lg">Downloade For
+        IOS</button>
+      <button class="text-lg text-white text-center px-20 py-4 rounded-full bg-lightBlue shadow-lg">Downloade For
+        Android</button>
+    </div>
+  </section>
+
+  <footer class="flex flex-col md:flex-row md:justify-between px-10 bg-gray-100 py-10 gap-10 md:gap-0">
+    <img src="./imgs/logo.svg" alt="" class="h-28 w-fit self-center md:self-start">
+    <div class="grid md:grid-cols-3 gap-2 opacity-50 text-xl justify-center w-full md:w-auto">
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Press Kit</a>
+      <a href="#">Install Quide</a>
+    </div>
+    <div class="flex gap-12 self-center">
+      <a href="#"><img src="./imgs/icon-twitter.svg" class="h-10"></a>
+      <a href="#"><img src="./imgs/icon-facebook.svg" class="h-10"></a>
+      <a href="#"><img src="./imgs/icon-instagram.svg" class="h-10"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
